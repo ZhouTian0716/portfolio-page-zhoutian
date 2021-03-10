@@ -1,68 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Advanced Selectors with CSS</title>
-  <link rel="stylesheet" href="./assets/css/reset.css" />
-  <link rel="stylesheet" href="./assets/css/style.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhou Tian Homepage</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
-  <header>
-    <h1>The CSS Blog</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Resources</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- Header part and Navigation tabs -->
+   <header>
+       <h1>ZT Homepage</h1>
+       <nav>
+           <a href="#about">About Me</a>
+           <a href="#about">Work</a>
+           <a href="#about">Contacts</a>
+           <!-- Click this to my resume! -->
+           <a href="#about">Resume</a>
+       </nav>
+    </header> 
 
-  <main>
+    <!-- Top Style section here -->
     <section>
-      <article>
-        <h2>A List of Learning Resources</h2>
-        <div>
-          <p>
-            A successful web developer is one that knows that there's always room to grow and learn. You may not use every single tool that's offered to you, but it's always good to know that certain tools exist. Check out these resources to broaden your knowledge:
-          </p>
-          <ul>
-            <li>
-              Mozilla Developer Network's documentation on <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">Cascading Style Sheets (CSS)</a> is a good
-              resource for all things CSS and web development in general.
-            </li>
-            <li>
-              Our own <a href="./assets/css/reset.css">reset.css</a> file shows how to set default browser styles.
-            </li>
-            <li>Another reset style sheet called <a href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">normalize.css</a> is popular in the
-              web development community
-            </li>
-            <li>Our own <a href="./assets/css/style.css">style.css</a> file shows how we've designed the page we're reading!
-            </li>
-
-            <li>The popular blog, <a href="https://css-tricks.com/">CSS Tricks,</a> has a lot of articles and resources to make you a better developer!
-            </li>
-
-          </ul>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil natus recusandae amet nostrum odit, ut unde non sint, quia sed inventore odio, delectus iure! Eligendi vitae fuga blanditiis accusamus tempore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, nisi, saepe quas sint consequuntur esse voluptatum, dolores dolor aspernatur neque laborum dolorum dolorem repudiandae. Dignissimos eveniet sequi
-            corporis tempore ullam!
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil natus recusandae amet nostrum odit, ut unde non sint, quia sed inventore odio, delectus iure! Eligendi vitae fuga blanditiis accusamus tempore!
-          </p>
-        </div>
-      </article>
+        <img id="img-header" src="./assets/images/d.jpg" alt="header-picture">
+        
+       
+        <h3>Study For life!</h3>
     </section>
-  </main>
 
-  <footer>
-    <span>Thanks for visiting!</span>
-  </footer>
+
+    <main>
+        <!-- About Me -->
+        <section>
+            <h2 class="h2-layout">About Me</h2>
+            <!--<img id="img-me" src="./assets/images/me.jpg" alt="zhou tian"> -->
+                <p class="p-layout">
+                    Hello! I am Zhou Tian, I wish to start a career in Web development with this portfolio! Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar,
+                </p>
+        </section>
+
+        <!-- Work -->
+        <section class="section-2" id="Work">
+            <h2 class="h2-layout">Work</h2>
+            <div>
+                
+                <p class="p-layout">
+                    Works from me
+                </p>
+                <img id="img-style1" src="./assets/images/1.jpeg" alt="project1">
+                <img class="img-style2" src="./assets/images/2.jpeg" alt="project2">
+                <img class="img-style2" src="./assets/images/3.jpg" alt="project3">
+                <img class="img-style2" src="./assets/images/4.jpeg" alt="project4">
+                <img class="img-style2" src="./assets/images/5.png" alt="project5">
+            </div>
+        </section>
+
+         <!-- Contacts -->
+         <section class="section-2" id="Contacts">
+            <h2>Contacts</h2>
+            <nav>
+                <a href="#about">Git Hub</a>
+                <a href="#about">Linkedin</a>
+                <a href="#about">Facebook</a>
+                <a href="https://www.youtube.com/channel/UCGBWakY3im5dIJrZrXPdlkA" Target="_blank">YouTube</a>
+            </nav>
+            
+        </section>
+
+
+    </main>
+
+
+
+
+
+    <footer>
+        <img id="img-header" src="./assets/images/d.jpg" alt="header-picture">
+        <span>Thanks for visiting!</span>
+    </footer>
+
+
+
 </body>
-
 </html>
