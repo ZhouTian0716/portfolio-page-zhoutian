@@ -139,8 +139,8 @@ h4 {
   /* image titles */
   background-color:var(--theme);
   position: relative;
-  margin-top: -3vw;
-  font-size: 2vw;
+  margin-top: -30px;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -189,7 +189,7 @@ div a{
   text-decoration: none;
   font-weight: bold;
   color:var(--header);
-  font-size: 1.5vw;
+  font-size: 20px;
 }
 
 div a:hover{
@@ -211,12 +211,12 @@ div a:hover{
 
 /* media queries */
 /* ----------------------------------------------------------------------- */
-
-
 @media screen and (max-width: 500px) {
   #img-header {
     height: 100px;
   }
+
+/* layout change when screen size down to 500px */
   .aboutMe {
     /* flex container */
     margin: 0vw 1vw 1vw 1vw;
@@ -230,12 +230,51 @@ div a:hover{
     width: 100%;
     font-size: 150%;
     border-bottom: 4px solid var(--border);
+    border-right: 0;
   }
   .me-layout {
-    /* flex container */
     text-align: justify;
     width: 100%;
   }
 
+  .Work {
+    margin: 0vw 1vw 1vw 1vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .image-layout {
+    /* flex container */
+    width: 100%;
+    margin-left: 1vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  #img-style1 {
+    border: 5px solid grey;
+    width: 300px;
+    height: 225px;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+  
+  .contact {
+    border-top:4px solid grey;
+    border-bottom:4px solid grey;
+    margin: 0vw 1vw 1vw 1vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  div a{
+    font-size: 3vw;
+  }
 
 }
