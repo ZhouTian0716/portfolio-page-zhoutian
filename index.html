@@ -14,74 +14,73 @@
    <header>
        <h1>ZT Homepage</h1>
        <nav>
-           <a href="#about">About Me</a>
-           <a href="#about">Work</a>
-           <a href="#about">Contacts</a>
+           <a href="#top">About Me</a>
+           <a href="#mid">Work</a>
+           <a href="#bottom">Contacts</a>
            <!-- Click this to my resume! -->
-           <a href="#about">Resume</a>
+           <a href="./assets/RESUME.pdf" target="_blank">Resume</a>
        </nav>
     </header> 
 
     <!-- Top Style section here -->
     <section>
         <img id="img-header" src="./assets/images/d.jpg" alt="header-picture">
-        
-       
-        <h3>Study For life!</h3>
+        <h3 id="message">Page updating actively!</h3>
     </section>
 
 
     <main>
         <!-- About Me -->
-        <section>
+        <section class="aboutMe">
             <h2 class="h2-layout">About Me</h2>
-            <!--<img id="img-me" src="./assets/images/me.jpg" alt="zhou tian"> -->
-                <p class="p-layout">
-                    Hello! I am Zhou Tian, I wish to start a career in Web development with this portfolio! Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar,
-                </p>
+                <div class="me-layout">
+                   <img id="img-me" src="./assets/images/me.jpg" alt="zhou tian"> 
+                    <p id="bio">Hello! I am Zhou Tian, I wish to start a career in Web development with this portfolio! Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar,</p>
+                </div>
         </section>
 
         <!-- Work -->
-        <section class="section-2" id="Work">
+        <section class="Work">
             <h2 class="h2-layout">Work</h2>
-            <div>
-                
-                <p class="p-layout">
-                    Works from me
-                </p>
-                <img id="img-style1" src="./assets/images/1.jpeg" alt="project1">
-                <img class="img-style2" src="./assets/images/2.jpeg" alt="project2">
-                <img class="img-style2" src="./assets/images/3.jpg" alt="project3">
-                <img class="img-style2" src="./assets/images/4.jpeg" alt="project4">
-                <img class="img-style2" src="./assets/images/5.png" alt="project5">
+            <div class="image-layout">
+                <div class="container">
+                    <img id="img-style1" src="./assets/images/1.jpeg" alt="project1">
+                    <h4>Assignment-Code Refactor</h4>
+                </div>
+                <div class="container">
+                    <img class="img-style2" src="./assets/images/2.jpg" alt="project2">
+                    <h4>CSS Cheatsheet</h4>
+                </div>
+                <div class="container">
+                    <img class="img-style2" src="./assets/images/3.jpeg" alt="project3">
+                    <h4>HTML Learning</h4>
+                </div> 
+                <div class="container">
+                    <img class="img-style2" src="./assets/images/4.jpeg" alt="project4">
+                    <h4>Front End Project</h4>
+                </div>
+                <div class="container">
+                    <img class="img-style2" src="./assets/images/5.png" alt="project5">
+                    <h4>Full Stack Project</h4>
+                </div>
             </div>
         </section>
 
-         <!-- Contacts -->
-         <section class="section-2" id="Contacts">
-            <h2>Contacts</h2>
-            <nav>
-                <a href="#about">Git Hub</a>
-                <a href="#about">Linkedin</a>
-                <a href="#about">Facebook</a>
-                <a href="https://www.youtube.com/channel/UCGBWakY3im5dIJrZrXPdlkA" Target="_blank">YouTube</a>
-            </nav>
-            
+        <!-- Contact -->
+         <section class="contact">
+            <h2 class="h2-layout">Contacts</h2>
+            <div class="contact-links">
+                <a href="https://github.com/" target="_blank">Git Hub</a>
+                <a href="https://www.linkedin.com/feed/" target="_blank">Linkedin</a>
+                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                <a href="https://www.youtube.com/channel/UCGBWakY3im5dIJrZrXPdlkA" target="_blank">YouTube</a>
+            </div>
         </section>
-
 
     </main>
 
-
-
-
-
     <footer>
-        <img id="img-header" src="./assets/images/d.jpg" alt="header-picture">
-        <span>Thanks for visiting!</span>
+        <p class="bottom-message">Thanks for visiting!</p>
     </footer>
-
-
-
 </body>
 </html>
