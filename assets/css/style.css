@@ -82,7 +82,7 @@ a:hover{
     padding-right: 1vw;
     float: left;
     width: 25vw;
-    font-size: 200%;
+    font-size: 2.5vw;
     border-right: 4px solid grey;
 }
 
@@ -124,32 +124,39 @@ a:hover{
   float: right;
   margin-left: 1vw;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .container{
-  background-color: green;
-  margin: 25px;
+  position: relative;
+  margin: 2vw 2vw;
 }
 
 h4 {
   background-color:var(--theme);
   position: relative;
-  margin-top: -5vw;
+  margin-top: -3vw;
+  font-size: 2vw;
+  text-align: center;
 }
 
 #img-style1 {
-  height: 22vw;
   border: 5px solid grey;
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 40vw;
+  width: 40vw;
+  height: 22.5vw;
+  flex-grow: 2;
+  flex-shrink: 2;
 }
 
 .img-style2 {
-  height: 200px;
-  width: 25vw;
   border: 5px solid grey;
+  width: 30vw;
+  height: 22.5vw;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 /* work */
 /* ----------------------------------------------------------------------- */
@@ -160,6 +167,8 @@ h4 {
 /* ----------------------------------------------------------------------- */
 
 .contact {
+  border-top:4px solid grey;
+  border-bottom:4px solid grey;
   margin: 0vw 1vw 1vw 1vw;
   display: flex;
   align-items: stretch;
@@ -170,28 +179,29 @@ h4 {
   text-align: center;
   float: right;
   margin-left: 1vw;
+  display: flex;
+  justify-content: space-around 
 }
 
 div a{
   text-decoration: none;
   font-weight: bold;
   color:var(--header);
-  justify-content: space-between
-}
-
-.bottom-message {
-  text-align: center;
-  color:var(--header);
-  font-weight: bold;
+  font-size: 1.5vw;
 }
 /* contact */
 /* ----------------------------------------------------------------------- */
 
+.bottom-message {
+  text-align: center;
+  color:var(--header);
+}
 
 
 
 
-/* m */
+
+/* media queries */
 /* ----------------------------------------------------------------------- */
 
 
