@@ -1,4 +1,5 @@
 /* custom color scheme */
+/* css variables */
 :root {
   --background: rgba(166, 161, 167, 0.842);
   --texts: #0b232b;
@@ -17,7 +18,7 @@ body {
   flex-direction: column;
 }
 
-/* header */
+/* header start*/
 /* ----------------------------------------------------------------------- */
 header {
   background: linear-gradient(to bottom right,rgb(0, 191, 255, 1), rgb(0, 191, 255, 0.1));
@@ -43,16 +44,16 @@ nav a {
   margin:0px 5px;
 }
 
-a:hover{
+nav a:hover{
   background-color:var(--theme);
   transition:all 0.5s ease-in-out;
 }
 
 #img-header {
   height: 150px;
-  width: 100vw;
+  width: 100%;
   margin-bottom: 1vw;
-  border-bottom: 5px solid grey;
+  border-bottom: 5px solid var(--border);
 }
 
 #message {
@@ -63,15 +64,16 @@ a:hover{
   margin-right: 30px;
   float: right;
 }
-/* header */
+/* header end*/
 /* ----------------------------------------------------------------------- */
 
 
 
 
-/* about me */
+/* about me start*/
 /* ----------------------------------------------------------------------- */
 .aboutMe {
+  /* flex container */
   margin: 0vw 1vw 1vw 1vw;
   display: flex;
   align-items: stretch;
@@ -81,13 +83,14 @@ a:hover{
     text-align: right;
     padding-right: 1vw;
     float: left;
-    width: 25vw;
-    font-size: 2.5vw;
+    width: 20%;
+    font-size: 24px;
     border-right: 4px solid grey;
 }
 
 .me-layout {
-  width: 75vw;
+  /* flex container */
+  width: 80%;
   text-align: justify;
   float: right;
   margin-left: 1vw;
@@ -101,17 +104,13 @@ a:hover{
   border-radius: 50px;
   margin: 5px;
 }
-
-#bio {
-  float: right;
-}
-/* about me */
+/* about me end*/
 /* ----------------------------------------------------------------------- */
 
 
 
 
-/* work */
+/* work start*/
 /* ----------------------------------------------------------------------- */
 .Work {
   margin: 0vw 1vw 1vw 1vw;
@@ -120,7 +119,8 @@ a:hover{
 }
 
 .image-layout {
-  width: 75vw;
+  /* flex container */
+  width: 80%;
   float: right;
   margin-left: 1vw;
   display: flex;
@@ -136,6 +136,7 @@ a:hover{
 }
 
 h4 {
+  /* image titles */
   background-color:var(--theme);
   position: relative;
   margin-top: -3vw;
@@ -153,8 +154,8 @@ h4 {
 
 .img-style2 {
   border: 5px solid grey;
-  width: 30vw;
-  height: 22.5vw;
+  width: 300px;
+  height: 225px;
   flex-grow: 1;
   flex-shrink: 1;
 }
@@ -175,6 +176,7 @@ h4 {
 }
 
 .contact-links {
+  /* flex container */
   width: 75vw;
   text-align: center;
   float: right;
@@ -189,6 +191,12 @@ div a{
   color:var(--header);
   font-size: 1.5vw;
 }
+
+div a:hover{
+  color:var(--theme);
+  transition:all 0.5s ease-in-out;
+}
+
 /* contact */
 /* ----------------------------------------------------------------------- */
 
@@ -205,8 +213,29 @@ div a{
 /* ----------------------------------------------------------------------- */
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
   #img-header {
     height: 100px;
   }
+  .aboutMe {
+    /* flex container */
+    margin: 0vw 1vw 1vw 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .h2-layout {
+    text-align: center;
+    padding-bottom: 1vw;
+    width: 100%;
+    font-size: 150%;
+    border-bottom: 4px solid var(--border);
+  }
+  .me-layout {
+    /* flex container */
+    text-align: justify;
+    width: 100%;
+  }
+
+
 }
